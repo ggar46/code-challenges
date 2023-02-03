@@ -9,12 +9,12 @@
 function divisibleBy3(num){
     //input is number, output is true or false;
     //use % to check if remainder is 0
-    return;
+    return num%3 === 0;
 }
 
-console.log(divisibleBy3(5)); 
-console.log(divisibleBy3(6));
-console.log(divisibleBy3(0));
-console.log(divisibleBy3("3"));
-console.log(divisibleBy3(-5));
-console.log(divisibleBy3(-6));
+console.log(divisibleBy3(5),  "assert false"); 
+console.log(divisibleBy3(6),  "assert true");
+console.log(divisibleBy3(0), "assert false");
+console.log(divisibleBy3("3"), "assert true");
+console.log(divisibleBy3(-5), "assert false");
+console.log(divisibleBy3(-6), "assert true");
