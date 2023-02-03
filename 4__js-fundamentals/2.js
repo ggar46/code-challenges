@@ -4,10 +4,17 @@
 
 function countChar(str1){
     //input is string, output is number of characters in that string
-    //turn into an array and return .length
+    //return .length
+    if(typeof str1 === "string"){
+        let strLength = str1.length;
+        return strLength;
+    } else {
+        return "Please enter a valid string";
+    }
 }
+
 
 console.log(countChar("hello"));
 console.log(countChar(""));
 console.log(countChar(0));
-console.log(divisibleBy3(true));
+console.log(countChar(true));
